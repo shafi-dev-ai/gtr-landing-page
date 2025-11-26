@@ -22,16 +22,16 @@ const features = [
       "Great for private sellers + dealerships",
     ],
   },
-  {
-    icon: Users,
-    title: "Global GT-R Community",
-    bullets: [
-      "Share build photos",
-      "Follow other owners",
-      "Discuss mods & track days",
-      "Stay connected to the culture",
-    ],
-  },
+  // {
+  //   icon: Users,
+  //   title: "Global GT-R Community",
+  //   bullets: [
+  //     "Share build photos",
+  //     "Follow other owners",
+  //     "Discuss mods & track days",
+  //     "Stay connected to the culture",
+  //   ],
+  // },
   {
     icon: Bell,
     title: "Real-Time Alerts",
@@ -64,7 +64,7 @@ const Features = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <Card
               key={index}

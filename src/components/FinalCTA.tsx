@@ -38,7 +38,7 @@ const FinalCTA = () => {
           </div>
 
           {/* Trust indicators */}
-          <div className="grid grid-cols-3 gap-8 pt-16 max-w-xl mx-auto opacity-70">
+          <div className="grid grid-cols-3 gap-6 pt-10 max-w-xl mx-auto opacity-70">
             <div className="text-center">
               <div className="text-sm text-muted-foreground">No Setup Fees</div>
             </div>

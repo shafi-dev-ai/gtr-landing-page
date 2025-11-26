@@ -16,33 +16,39 @@ const Dealership = () => {
               Join the premier GT-R marketplace and connect with serious buyers worldwide.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8 py-8">
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                  <Eye className="w-6 h-6 text-primary" />
+            <div className="rounded-2xl bg-background/80 border border-border/60 shadow-card px-6 py-8 md:px-8 md:py-10">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="space-y-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                    <Eye className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="text-2xl font-display font-bold">10x</div>
+                  <div className="text-sm text-muted-foreground">More Exposure</div>
                 </div>
-                <div className="text-2xl font-display font-bold">10x</div>
-                <div className="text-sm text-muted-foreground">More Exposure</div>
-              </div>
-              
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                  <TrendingUp className="w-6 h-6 text-primary" />
+                
+                <div className="space-y-3 md:border-l md:border-border/60 md:pl-8">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                    <TrendingUp className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="text-2xl font-display font-bold">3x</div>
+                  <div className="text-sm text-muted-foreground">Faster Sales</div>
                 </div>
-                <div className="text-2xl font-display font-bold">3x</div>
-                <div className="text-sm text-muted-foreground">Faster Sales</div>
-              </div>
-              
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                  <DollarSign className="w-6 h-6 text-primary" />
+                
+                <div className="space-y-3 md:border-l md:border-border/60 md:pl-8">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                    <DollarSign className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="text-2xl font-display font-bold">$0</div>
+                  <div className="text-sm text-muted-foreground">Setup Fees</div>
                 </div>
-                <div className="text-2xl font-display font-bold">$0</div>
-                <div className="text-sm text-muted-foreground">Setup Fees</div>
               </div>
             </div>
 
-            <Button variant="hero" size="lg">
+            <Button
+              variant="hero-secondary"
+              size="lg"
+              className="border-primary text-primary hover:bg-primary/10"
+            >
               Join as a Dealer
             </Button>
           </div>

@@ -38,12 +38,11 @@ const AppPreview = () => {
         </div>
 
         {/* Features grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 max-w-5xl mx-auto">
           {[
-            "Marketplace View",
-            "Listing Creation",
-            "Community Feed",
-            "User Profile",
+            "Immersive listing gallery",
+            "Events to create and join",
+            "One-tap alerts & saves",
           ].map((feature, index) => (
             <div
               key={index}
@@ -59,3 +58,6 @@ const AppPreview = () => {
 };
 
 export default AppPreview;
+
+
+

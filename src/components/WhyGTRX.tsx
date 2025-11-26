@@ -2,7 +2,7 @@ import whyGtr from "@/assets/why-gtr.jpg";
 
 const WhyGTRX = () => {
   return (
-    <section className="relative pt-12 pb-24">
+    <section id="why-gtrx" className="relative pt-8 pb-24 scroll-mt-24">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background pointer-events-none" />
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
