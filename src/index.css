@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GTRX Design System - GT-R Marketplace & Community */
+
+@layer base {
+  :root {
+    /* Base colors - Dark automotive theme */
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    /* Card surfaces */
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    /* Popover */
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    /* White - Primary brand color */
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 10%;
+
+    /* Metallic grey - Secondary */
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    /* Muted surfaces */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    /* Accent - Light grey */
+    --accent: 0 0% 85%;
+    --accent-foreground: 0 0% 10%;
+
+    /* Destructive */
+    --destructive: 0 85% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders */
+    --border: 0 0% 20%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 98%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --gtrx-white: 0 0% 98%;
+    --gtrx-white-dark: 0 0% 85%;
+    --gtrx-grey: 0 0% 25%;
+    --gtrx-grey-light: 0 0% 40%;
+    --gtrx-black: 0 0% 7%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 12%) 50%, hsl(0 0% 15%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 12%) 0%, hsl(0 0% 8%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(0 0% 98%) 0%, hsl(0 0% 85%) 100%);
+    
+    /* Shadows with white glow */
+    --shadow-glow: 0 0 40px hsl(0 0% 98% / 0.3);
+    --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.5);
+    --shadow-premium: 0 20px 60px hsl(0 0% 98% / 0.15);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .glow-red {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(90deg, hsl(0 0% 98%), hsl(0 0% 85%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-glow {
+    border: 1px solid hsl(0 0% 98% / 0.3);
+    box-shadow: 0 0 20px hsl(0 0% 98% / 0.2);
+  }
+}
