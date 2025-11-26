@@ -3,14 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
-import { X } from "lucide-react";
+import { supabase } from "@/lib/supabaseClient";
 
 interface EmailFormProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  source?: string;
 }
 
-const EmailForm = ({ open, onOpenChange }: EmailFormProps) => {
+const EmailForm = ({ open, onOpenChange, source = "unknown" }: EmailFormProps) => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -27,19 +28,53 @@ const EmailForm = ({ open, onOpenChange }: EmailFormProps) => {
       return;
     }
 
+    if (!supabase) {
+      toast({
+        title: "Connection error",
+        description: "Unable to connect right now. Please try again shortly.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Success!",
-      description: "You've been added to the early access list.",
-    });
-    
-    setEmail("");
-    setIsSubmitting(false);
-    onOpenChange(false);
+
+    try {
+      const { error } = await supabase.from("waitlist_signups").insert({
+        email: email.trim(),
+        source,
+      });
+
+      if (error) {
+        const description =
+          error.code === "23505"
+            ? "This email is already on the waitlist."
+            : "We couldn't save your email right now. Please try again.";
+
+        toast({
+          title: "Something went wrong",
+          description,
+          variant: "destructive",
+        });
+        return;
+      }
+
+      toast({
+        title: "Success!",
+        description: "You've been added to the early access list.",
+      });
+      
+      setEmail("");
+      onOpenChange(false);
+    } catch (err) {
+      toast({
+        title: "Network error",
+        description: "Please check your connection and try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

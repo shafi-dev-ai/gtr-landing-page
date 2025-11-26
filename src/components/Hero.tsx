@@ -27,15 +27,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 pt-28 pb-12 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          <h1 className="text-6xl md:text-8xl font-display font-bold tracking-tight">
-            <span className="inline-flex items-center justify-center gap-4 flex-wrap">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight">
+            <span className="inline-flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-3 md:gap-4 text-center">
               <img
                 src={logo}
                 alt="GTRX"
-                className="h-14 w-auto drop-shadow"
+                className="h-12 sm:h-14 w-auto drop-shadow"
               />
               <span className="sr-only">GTRX</span>
-              <span className="whitespace-nowrap">
+              <span className="text-balance lg:whitespace-nowrap">
                 Where <span className="text-gradient">GT-R Culture</span> Lives
               </span>
             </span>
@@ -87,7 +87,7 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
       
-      <EmailForm open={showEmailForm} onOpenChange={setShowEmailForm} />
+      <EmailForm open={showEmailForm} onOpenChange={setShowEmailForm} source="hero" />
     </>
   );
 };

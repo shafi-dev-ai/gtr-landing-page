@@ -52,7 +52,7 @@ const FinalCTA = () => {
         </div>
       </div>
       
-      <EmailForm open={showEmailForm} onOpenChange={setShowEmailForm} />
+      <EmailForm open={showEmailForm} onOpenChange={setShowEmailForm} source="final-cta" />
     </section>
     </>
   );

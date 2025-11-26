@@ -49,7 +49,7 @@ const Navigation = () => {
         </div>
       </div>
       
-      <EmailForm open={showEmailForm} onOpenChange={setShowEmailForm} />
+      <EmailForm open={showEmailForm} onOpenChange={setShowEmailForm} source="nav" />
     </nav>
     </>
   );
