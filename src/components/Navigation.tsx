@@ -26,12 +26,6 @@ const Navigation = () => {
             <a href="#features" className="text-foreground/80 hover:text-primary transition-colors">
               Features
             </a>
-            <a href="#dealers" className="text-foreground/80 hover:text-primary transition-colors">
-              For Dealers
-            </a>
-            <a href="#pricing" className="text-foreground/80 hover:text-primary transition-colors">
-              Pricing
-            </a>
           </div>
 
           <div className="flex items-center gap-4">
