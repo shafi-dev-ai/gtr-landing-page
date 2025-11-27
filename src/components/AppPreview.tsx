@@ -1,5 +1,5 @@
 import mockup1 from "@/assets/app-mockup-1.png";
-import mockup2 from "@/assets/app-mockup-2.jpeg";
+import mockup2 from "@/assets/app-mockup-2.png";
 
 const AppPreview = () => {
   return (
