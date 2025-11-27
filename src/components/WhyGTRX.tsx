@@ -17,25 +17,10 @@ const WhyGTRX = () => {
                 A Unified Home for <span className="text-gradient">GT-R Enthusiasts</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                The GT-R world is huge but scattered across forums, groups, dealerships, and social platforms.
-                GTRX brings everything together into one premium digital hub for buying, selling, showcasing builds,
-                and connecting with the community.
+                The GT-R world is huge but scattered. Forums, Facebook groups, dealerships, private sellers, and Instagram builds all live separately. GTRX brings everything together. Our mission is to unify GT-R culture into one premium digital hub. A place where enthusiasts can buy, sell, showcase builds, and connect with the community like never before.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-4 text-left">
-              {[
-                "Built for serious GT-R collectors and fans",
-                "Curated listings with real specs and provenance",
-                "Community-first features that keep enthusiasts connected",
-                "Global reach with local credibility",
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2" />
-                  <p className="text-muted-foreground">{item}</p>
-                </div>
-              ))}
-            </div>
           </div>
 
           <div className="relative group">

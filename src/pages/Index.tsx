@@ -17,8 +17,8 @@ const Index = () => {
       <WhyGTRX />
       <Features />
       <AppPreview />
-      <Dealership />
-      <Pricing />
+      {/* <Dealership />
+      <Pricing /> */}
       <Credibility />
       <FinalCTA />
       <Footer />

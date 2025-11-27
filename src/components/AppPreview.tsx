@@ -37,27 +37,11 @@ const AppPreview = () => {
           </div>
         </div>
 
-        {/* Features grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 max-w-5xl mx-auto">
-          {[
-            "Immersive listing gallery",
-            "Events to create and join",
-            "One-tap alerts & saves",
-          ].map((feature, index) => (
-            <div
-              key={index}
-              className="gradient-card border-glow rounded-lg p-6 text-center hover:shadow-premium transition-all duration-300"
-            >
-              <div className="text-lg font-display font-semibold">{feature}</div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
 };
 
 export default AppPreview;
-
 
 

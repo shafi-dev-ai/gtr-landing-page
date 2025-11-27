@@ -38,16 +38,21 @@ const FinalCTA = () => {
           </div>
 
           {/* Trust indicators */}
-          <div className="grid grid-cols-3 gap-6 pt-10 max-w-xl mx-auto opacity-70">
-            <div className="text-center">
-              <div className="text-sm text-muted-foreground">No Setup Fees</div>
-            </div>
-            <div className="text-center border-x border-border">
-              <div className="text-sm text-muted-foreground">Cancel Anytime</div>
-            </div>
-            <div className="text-center">
-              <div className="text-sm text-muted-foreground">Secure Platform</div>
-            </div>
+          <div className="flex flex-wrap justify-center gap-3 pt-10">
+            {[
+              "Verified listings only",
+              "Built by GT-R owners",
+              "Global community access",
+              "Zero hidden fees",
+            ].map((pill) => (
+              <div
+                key={pill}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-border/60 backdrop-blur-sm"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span className="text-sm text-muted-foreground">{pill}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
