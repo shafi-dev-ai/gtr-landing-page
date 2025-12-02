@@ -17,7 +17,7 @@ const WhyGTRX = () => {
                 Our Mission: <span className="text-gradient">Unify GT-R Culture</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                The GT-R community is huge but scattered. Our mission is to unify it into one premium hub where enthusiasts can buy, sell, showcase and connect like never before.
+                The GT-R community is huge but scattered. Our mission is to unify it into one premium app where enthusiasts can buy, sell, showcase and connect like never before.
               </p>
             </div>
 

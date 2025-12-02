@@ -50,7 +50,7 @@ const FinalCTA = () => {
             <div className="flex flex-wrap justify-center gap-3 pt-10">
               {[
                 "Verified listings only",
-                "Built by GT-R owners",
+                "Build for GT-R owners",
                 "Global community access",
               ].map((pill) => (
                 <div

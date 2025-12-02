@@ -1,5 +1,12 @@
 import mockup1 from "@/assets/app-mockup-1.png";
 import mockup2 from "@/assets/app-mockup-2.png";
+import mockup3 from "@/assets/app-mockup-3.png";
+
+const mockups = [
+  { src: mockup1, alt: "GTRX Welcome screen" },
+  { src: mockup2, alt: "GTRX home screen view" },
+  { src: mockup3, alt: "GTRX Meetup event full screen" },
+];
 
 const AppPreview = () => {
   return (
@@ -17,24 +24,17 @@ const AppPreview = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="relative group">
-            <div className="absolute inset-0 bg-primary/20 blur-3xl group-hover:bg-primary/30 transition-all duration-500" />
-            <img
-              src={mockup1}
-              alt="GTRX marketplace view"
-              className="relative rounded-2xl shadow-premium border border-border hover:scale-105 transition-transform duration-500"
-            />
-          </div>
-          
-          <div className="relative group">
-            <div className="absolute inset-0 bg-primary/20 blur-3xl group-hover:bg-primary/30 transition-all duration-500" />
-            <img
-              src={mockup2}
-              alt="GTRX community feed"
-              className="relative rounded-2xl shadow-premium border border-border hover:scale-105 transition-transform duration-500"
-            />
-          </div>
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {mockups.map((mockup, index) => (
+            <div key={index} className="relative group">
+              <div className="absolute inset-0 bg-primary/20 blur-3xl group-hover:bg-primary/30 transition-all duration-500" />
+              <img
+                src={mockup.src}
+                alt={mockup.alt}
+                className="relative rounded-2xl shadow-premium border border-border hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
         </div>
 
       </div>
@@ -43,5 +43,4 @@ const AppPreview = () => {
 };
 
 export default AppPreview;
-
 
