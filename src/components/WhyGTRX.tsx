@@ -14,7 +14,7 @@ const WhyGTRX = () => {
 
             <div className="space-y-4">
               <h2 className="text-5xl md:text-6xl font-display font-bold leading-tight">
-                Our Mission: <span className="text-gradient">Unify GT-R Culture</span>
+                <span className="text-gradient">Unify GT-R Culture</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 The GT-R community is huge but scattered. Our mission is to unify it into one premium app where enthusiasts can buy, sell, showcase and connect like never before.

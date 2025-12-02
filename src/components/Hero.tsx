@@ -36,15 +36,12 @@ const Hero = () => {
         <div className="relative z-10 w-full px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 py-28 md:py-32 flex justify-center">
           <div className="w-full max-w-7xl text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold tracking-tight">
-              <span className="flex flex-col items-center justify-center gap-2">
-                <span className="block md:hidden leading-tight text-balance">
-                  <span className="block">Where</span>
-                  <span className="block">
-                    <span className="text-gradient">GT-R Culture</span> Lives
-                  </span>
+              <span className="flex flex-col items-center justify-center gap-2 leading-tight text-balance">
+                <span className="block">
+                  Where <span className="text-gradient">GT-R</span>
                 </span>
-                <span className="hidden md:block text-balance">
-                  Where <span className="text-gradient">GT-R Culture</span> Lives
+                <span className="block">
+                  <span className="text-gradient">Culture</span> Lives
                 </span>
               </span>
             </h1>
