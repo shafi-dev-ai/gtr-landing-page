@@ -42,15 +42,15 @@ const features = [
       "Marketplace updates",
     ],
   },
-  {
-    icon: ShieldCheck,
-    title: "Verified & Safe",
-    bullets: [
-      "Verified accounts",
-      "Authentic sellers",
-      "Clear history & transparency",
-    ],
-  },
+  // {
+  //   icon: ShieldCheck,
+  //   title: "Verified & Safe",
+  //   bullets: [
+  //     "Verified accounts",
+  //     "Authentic sellers",
+  //     "Clear history & transparency",
+  //   ],
+  // },
 ];
 
 const Features = () => {
@@ -63,7 +63,7 @@ const Features = () => {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <Card
               key={index}

@@ -1,4 +1,4 @@
-import whyGtr from "@/assets/why-gtr.png";
+import whyGtr from "@/assets/why-gtr.jpg";
 
 const WhyGTRX = () => {
   return (
@@ -17,7 +17,7 @@ const WhyGTRX = () => {
                 Our Mission: <span className="text-gradient">Unify GT-R Culture</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                The GT-R world is huge but scattered. Forums, Facebook groups, dealerships, private sellers, and Instagram builds all live separately. GTRX exists to bring everything together into one premium digital hub where enthusiasts can buy, sell, showcase builds, and connect with the community like never before.
+                The GT-R community is huge but scattered. Our mission is to unify it into one premium hub where enthusiasts can buy, sell, showcase and connect like never before.
               </p>
             </div>
 
