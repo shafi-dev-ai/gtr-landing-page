@@ -6,20 +6,18 @@ const features = [
     icon: Search,
     title: "GT-R Marketplace",
     bullets: [
-      "High-quality photos & specs",
-      "Mileage, mod lists, service history",
-      "Worldwide listings & filters",
-      "Save favorites & set alerts",
+      "High-quality photos & full specs",
+      "Global listings with smart filters",
+      "Save favorites & get alerts",
     ],
   },
   {
     icon: Upload,
-    title: "Post Your GT-R in Minutes",
+    title: "Post Your GT-R Fast",
     bullets: [
-      "Upload photos",
-      "Add specs, upgrades, maintenance",
-      "Global buyer visibility",
-      "Great for private sellers + dealerships",
+      "Quick photo + spec upload",
+      "For private sellers & dealers",
+      "Reach buyers worldwide",
     ],
   },
   // {
@@ -34,12 +32,11 @@ const features = [
   // },
   {
     icon: Bell,
-    title: "Real-Time Alerts",
+    title: "Alerts & Verified Profiles",
     bullets: [
-      "New listings",
-      "Price drops",
-      "Saved searches",
-      "Marketplace updates",
+      "New listing + price-drop alerts",
+      "Saved-search notifications",
+      "Verified sellers for safety",
     ],
   },
   // {
