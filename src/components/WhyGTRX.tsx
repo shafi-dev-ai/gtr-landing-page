@@ -7,10 +7,10 @@ const WhyGTRX = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 text-center lg:text-left">
-            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/5 border border-border">
+            {/* <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/5 border border-border">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm uppercase tracking-[0.15em] text-muted-foreground">Our Mission</span>
-            </div>
+            </div> */}
 
             <div className="space-y-4">
               <h2 className="text-5xl md:text-6xl font-display font-bold leading-tight">
