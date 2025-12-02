@@ -30,8 +30,8 @@ const Navigation = () => {
             
             <div className="ml-auto flex items-center gap-6">
               <div className="hidden md:flex items-center gap-8">
-                <a href="#why-gtrx" className="text-foreground/80 hover:text-primary transition-colors">
-                  Why GTRX
+                <a href="#our-mission" className="text-foreground/80 hover:text-primary transition-colors">
+                  Our Mission
                 </a>
                 <a href="#features" className="text-foreground/80 hover:text-primary transition-colors">
                   Features

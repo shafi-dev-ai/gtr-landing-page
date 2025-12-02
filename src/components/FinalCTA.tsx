@@ -31,7 +31,7 @@ const FinalCTA = () => {
             </h2>
             
             <p className="text-2xl text-muted-foreground">
-              Buy. Sell. Discover. Connect.
+              Global marketplace for GT-R enthusiasts.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
@@ -52,7 +52,6 @@ const FinalCTA = () => {
                 "Verified listings only",
                 "Built by GT-R owners",
                 "Global community access",
-                "Zero hidden fees",
               ].map((pill) => (
                 <div
                   key={pill}

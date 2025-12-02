@@ -19,7 +19,7 @@ const Index = () => {
       <AppPreview />
       {/* <Dealership />
       <Pricing /> */}
-      <Credibility />
+      {/* <Credibility /> */}
       <FinalCTA />
       <Footer />
     </div>

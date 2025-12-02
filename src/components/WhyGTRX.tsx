@@ -1,23 +1,23 @@
-import whyGtr from "@/assets/why-gtr.jpg";
+import whyGtr from "@/assets/why-gtr.png";
 
 const WhyGTRX = () => {
   return (
-    <section id="why-gtrx" className="relative pt-8 pb-24 scroll-mt-24">
+    <section id="our-mission" className="relative pt-8 pb-24 scroll-mt-24">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background pointer-events-none" />
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 text-center lg:text-left">
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/5 border border-border">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-sm uppercase tracking-[0.15em] text-muted-foreground">Why GTRX</span>
+              <span className="text-sm uppercase tracking-[0.15em] text-muted-foreground">Our Mission</span>
             </div>
 
             <div className="space-y-4">
               <h2 className="text-5xl md:text-6xl font-display font-bold leading-tight">
-                A Unified Home for <span className="text-gradient">GT-R Enthusiasts</span>
+                Our Mission: <span className="text-gradient">Unify GT-R Culture</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                The GT-R world is huge but scattered. Forums, Facebook groups, dealerships, private sellers, and Instagram builds all live separately. GTRX brings everything together. Our mission is to unify GT-R culture into one premium digital hub. A place where enthusiasts can buy, sell, showcase builds, and connect with the community like never before.
+                The GT-R world is huge but scattered. Forums, Facebook groups, dealerships, private sellers, and Instagram builds all live separately. GTRX exists to bring everything together into one premium digital hub where enthusiasts can buy, sell, showcase builds, and connect with the community like never before.
               </p>
             </div>
 

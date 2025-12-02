@@ -49,7 +49,6 @@ const features = [
       "Verified accounts",
       "Authentic sellers",
       "Clear history & transparency",
-      "No hidden fees",
     ],
   },
 ];
