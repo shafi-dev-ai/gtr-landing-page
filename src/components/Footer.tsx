@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -6,7 +8,11 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
-            <div className="text-2xl font-display font-bold text-gradient">GTRX</div>
+            <img
+              src={logo}
+              alt="GTRX logo"
+              className="h-10 w-auto drop-shadow"
+            />
             {/* <p className="text-sm text-muted-foreground">
               The global marketplace for GT-R enthusiasts.
             </p> */}
