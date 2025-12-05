@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import { EARLY_ACCESS_URL } from "@/lib/constants";
 import EmailForm from "./EmailForm";
+import InstagramIcon from "./InstagramIcon";
 
 const Navigation = () => {
   const [showEmailForm, setShowEmailForm] = useState(false);
@@ -48,6 +49,7 @@ const Navigation = () => {
                   onClick={handleEarlyAccessClick}
                 >
                   Follow us
+                  <InstagramIcon className="h-5 w-5" />
                 </Button>
               </div>
             </div>

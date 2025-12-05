@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { EARLY_ACCESS_URL } from "@/lib/constants";
 import EmailForm from "./EmailForm";
+import InstagramIcon from "./InstagramIcon";
 
 const FinalCTA = () => {
   const [showEmailForm, setShowEmailForm] = useState(false);
@@ -42,6 +43,7 @@ const FinalCTA = () => {
                 onClick={handleEarlyAccessClick}
               >
                 Follow us
+                <InstagramIcon className="h-5 w-5" />
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>

@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero.jpg";
 import { EARLY_ACCESS_URL } from "@/lib/constants";
 import EmailForm from "./EmailForm";
+import InstagramIcon from "./InstagramIcon";
 
 const Hero = () => {
   const [showEmailForm, setShowEmailForm] = useState(false);
@@ -58,6 +59,7 @@ const Hero = () => {
                 onClick={handleEarlyAccessClick}
               >
                 Follow us
+                <InstagramIcon className="h-5 w-5" />
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
